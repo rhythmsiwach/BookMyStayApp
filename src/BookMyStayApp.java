@@ -31,7 +31,7 @@ class BookingHistory {
 
     // Retrieve all reservations in insertion order
     public List<Reservation> getAllReservations() {
-        return Collections.unmodifiableList(confirmedBookings);
+        return Collections.unmodifiableList(confirmedBookings); // read-only
     }
 }
 
@@ -72,4 +72,3 @@ public class BookMyStayApp {
         reportService.generateSummaryReport(history);
     }
 }
-
